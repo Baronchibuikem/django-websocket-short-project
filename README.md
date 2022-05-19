@@ -8,6 +8,7 @@ A simple project to test out websocket in django, utilizing celery, redis and re
         pip install -r requirements
         python manage.py makemigrations
         python manange.py migrate
+        python manage.py collectstatic
         python manage.py runserver
         celery -A newsaggregator worker -l INFO
         celery -A newsaggregator beat -INFO
